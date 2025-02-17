@@ -39,7 +39,7 @@ const Home = () => {
                 <div className="text-center md:text-left mb-10 md:mb-0">
                     <div className="mb-4">
                         <img
-                            src="../../public/gifs/Gif-1.gif"
+                            src="../assets/videos/Gif-1.gif"
                             alt="Animated GIF"
                             className="mx-auto w-40 h-40 md:w-48 md:h-48 object-cover rounded-full shadow-lg"
                         />
