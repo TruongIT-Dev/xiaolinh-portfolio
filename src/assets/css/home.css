@@ -136,3 +136,41 @@
 .card:hover .hello {
     transform: translateY(-20px);
 }
+
+
+/* Bg-wave */
+.wave {
+    opacity: 0.6;
+    position: absolute;
+    bottom: 45%;
+    left: -30%;
+    width: 6050px;
+    height: 6050px;
+    background: #f43f5e;
+    /* bg-rose-500 */
+    margin-left: -3000px;
+    transform-origin: 50% 48%;
+    border-radius: 46%;
+    animation: wave 12s infinite linear;
+    pointer-events: none;
+}
+
+.wave2 {
+    animation: wave 28s infinite linear;
+    opacity: 0.3;
+}
+
+.wave3 {
+    animation: wave 20s infinite linear;
+    opacity: 1;
+}
+
+@keyframes wave {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -5,9 +5,9 @@ const getLinksData = () => {
     return {
         navLinks: [
             { name: "Về mình", path: "/", icon: <FaHome /> },
-            { name: "Sở thích", path: "#hobbies", icon: <FaHeart /> },
-            { name: "Công Việc", path: "#jobs", icon: <FaBriefcase /> },
-            { name: "Resumé", path: "#cv", icon: <FaFileAlt /> },
+            { name: "Sở thích", path: "*", icon: <FaHeart /> },
+            { name: "Công Việc", path: "*", icon: <FaBriefcase /> },
+            { name: "Resumé", path: "*", icon: <FaFileAlt /> },
         ],
         socialLinks: [
             { icon: <FaFacebook />, href: "https://www.facebook.com/tran.vu.ngoc.linh.147959" },

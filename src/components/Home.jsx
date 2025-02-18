@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import '../assets/css/card-phone.css'
+import '../assets/css/home.css'
 
 const Home = () => {
     const texts = ["Trần Vũ Ngọc Linh", "Sinh Viên UEL", "Sinh Viên Kế Toán"];
@@ -32,14 +32,14 @@ const Home = () => {
     }, [displayText, isDeleting, index]);
 
     return (
-        <section className="flex h-screen items-center justify-center bg-rose-100 text-white">
-            <div className="container mx-auto flex flex-col md:flex-row items-center justify-around px-8 py-8 md:py-0">
-
+        <section className="relative flex h-screen items-center justify-center bg-white text-white overflow-hidden">
+            {/* Nội dung chính */}
+            <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-around px-8 py-8 md:py-0">
                 {/* Left Content */}
                 <div className="text-center md:text-left mb-10 md:mb-0">
                     <div className="mb-4">
                         <img
-                            src="/gifs/Gif-1.gif"
+                            src="/gifs/Gif-3.gif"
                             alt="Animated GIF"
                             className="mx-auto w-40 h-40 md:w-48 md:h-48 object-cover rounded-full shadow-lg"
                         />
@@ -51,14 +51,13 @@ const Home = () => {
                         </span>
                     </h1>
                     <p className="text-lg md:text-xl text-gray-600">
-                        Mình mơ lớn để sau này giấc mơ thành hiện thật.
+                        Mình mơ lớn để sau này giấc mơ thành hiện thực.
                     </p>
                 </div>
 
                 {/* Right Image Section */}
                 <div className="w-full md:w-1/2 flex justify-center">
                     <div className="card">
-
                         <div className="btn1"></div>
                         <div className="btn2"></div>
                         <div className="btn3"></div>
@@ -78,8 +77,13 @@ const Home = () => {
                 </div>
 
             </div>
+            {/* Hiệu ứng gợn sóng */}
+            <div className="absolute top-0 left-1/4 w-full h-full bg-white rotate-180 overflow-hidden">
+                <div className="wave"></div>
+                <div className="wave wave2"></div>
+                <div className="wave wave3"></div>
+            </div>
         </section>
-
     );
 };
 
