@@ -12,7 +12,7 @@
 
 .card-int {
     /* background-image: linear-gradient(to right bottom, #ff0000, #ff0045, #ff0078, #ea00aa, #b81cd7, #8a3ad6, #5746cf, #004ac2, #003d94, #002e66, #001d3a, #020812); */
-    background-image: url('../../../public/images/introduce-image-2.jpg');
+    background-image: url('/images/introduce-image-2.jpg');
     background-size: cover;
     background-position: 60% 0%;
     height: 100%;
@@ -23,7 +23,7 @@
 
 .card:hover .card-int {
     background-position: 0% 100%;
-    background-image: url('../../../public/images/introduce-image-3.jpg');
+    background-image: url('/images/introduce-image-3.jpg');
     background-size: cover;
 }
 

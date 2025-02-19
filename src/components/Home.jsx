@@ -32,12 +32,12 @@ const Home = () => {
     }, [displayText, isDeleting, index]);
 
     return (
-        <section className="relative flex h-screen items-center justify-center bg-white text-white overflow-hidden">
+        <section className="relative flex lg:h-screen h-full items-center justify-center bg-white text-white overflow-hidden">
             {/* Nội dung chính */}
             <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-around px-8 py-8 md:py-0">
                 {/* Left Content */}
-                <div className="text-center md:text-left mb-10 md:mb-0">
-                    <div className="mb-4">
+                <div className="text-center md:text-left lg:mt-0 mb-10 lg:mb-0">
+                    <div className="my-4">
                         <img
                             src="/gifs/Gif-3.gif"
                             alt="Animated GIF"
@@ -78,7 +78,7 @@ const Home = () => {
 
             </div>
             {/* Hiệu ứng gợn sóng */}
-            <div className="absolute top-0 left-1/4 w-full h-full bg-white rotate-180 overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-full bg-white rotate-180 overflow-hidden">
                 <div className="wave"></div>
                 <div className="wave wave2"></div>
                 <div className="wave wave3"></div>
